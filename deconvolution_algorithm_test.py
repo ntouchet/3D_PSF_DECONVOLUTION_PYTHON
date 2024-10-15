@@ -31,7 +31,7 @@ for i in range(0,5):
 
 
 def get_dot_intensities(x_center,y_center,z_center):
-    1
+    1000
 
 
     
