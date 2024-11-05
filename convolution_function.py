@@ -7,12 +7,14 @@ from scipy.ndimage import convolve
 def main():
     x_resolution = 100
     y_resolution = 100
+    
     image_data = np.zeros((x_resolution,y_resolution))
 
     image_data[(x_resolution//2),(y_resolution//2)] = 1
     image_data[(x_resolution//2-1),(y_resolution//2)] = 1
     image_data[x_resolution//2,(y_resolution//2-1)] = 1
     image_data[(x_resolution//2-1),(y_resolution//2-1)] = 1
+    #image_data = np.random.rand(x_resolution,y_resolution)
 
     number_of_pixles_in_kernel = 10
     kernel_start = -1
