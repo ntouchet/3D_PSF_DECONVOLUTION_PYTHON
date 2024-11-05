@@ -26,7 +26,7 @@ def main():
         if z_position < 0:
             z_kernel[index] = 0
         else:
-            x_y_kernel[index]=np.sinc(z_position)*np.exp(-z_position)
+            z_kernel[index]=np.sinc(z_position)*np.exp(-z_position)
 
     for index in range(number_of_pixles_in_kernel):
         sinc = np.sinc(kernel_start+index*space_between_kernel_pixels)
